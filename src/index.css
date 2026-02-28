@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Star animation */
+@keyframes pulseCustom {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-custom {
+  animation: pulseCustom 2s infinite;
+}
+
+/* Gradient text utility */
+.text-gradient {
+  background: linear-gradient(to right, #ec4899, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
